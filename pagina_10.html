@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background: #555;
+            color: white;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .boton {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 0 10px;
+            }
+            .sidebar {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .content {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Biografía</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Información</h2>
+            <p><strong>Nombre:</strong> Steven Izurieta</p>
+            <p><strong>Ocupación:</strong> Estudiante</p>
+        </aside>
+
+        <section class="content">
+            <h2>Sobre Mí</h2>
+            <p>Estudiante de ingeniería en software, con conocimientos de ciberseguridad y análisis forense.</p>
+            
+            <h2>Experiencia</h2>
+            <p>Pentesting en páginas web y análisis forense.</p>
+        </section>
+    </div>
+
+    <button class="boton" onclick="window.location.href='index.html'">Listado de ejercicios</button>
+
+</body>
+</html>
+

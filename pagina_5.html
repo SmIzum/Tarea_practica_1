@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .cv-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    ul.contact-info {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul.contact-info li {
+      margin: 5px 0;
+    }
+    .section {
+      margin: 20px 0;
+    }
+    .boton {
+      display: block;
+      width: 250px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+    .boton:hover {
+      background-color: #218838;
+    }
+    @media (max-width: 600px) {
+      .cv-container {
+        margin: 10px;
+        padding: 10px;
+      }
+      .boton {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <h1>Steven Izurieta</h1>
+    <ul class="contact-info">
+      <li><strong>Email:</strong> smizurietam@ube.edu.ec</li>
+      <li><strong>Teléfono:</strong> +593 999799999</li>
+      <li><strong>Dirección:</strong> Quito, Ecuador</li>
+    </ul>
+
+    <div class="section">
+      <h2>Formación Académica</h2>
+      <p><strong>Ingeniería en Software</strong> - Universidad Bolivariana del Ecuador<br>Cursando</p>
+      <p><strong>Bachillerato en Ciencias</strong> - Colegio Nacional Quito</p>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia Laboral</h2>
+      <p><strong>Practicante en Ciberseguridad</strong> - Empresa Cibertech Solution<br>Junio 2023 - Agosto 2023<br>Responsable de realizar pruebas de penetración y análisis de vulnerabilidades en sistemas internos, ademas del informe de pentesting y tambien informatica forense</p>
+      <p><strong>Asistente de Soporte Técnico</strong> - Tech Solutions<br>Enero 2022 - Mayo 2023<br>Proveía soporte técnico a clientes y solucionaba problemas de hardware y software.</p>
+    </div>
+    <button class="boton" onclick="window.location.href='index.html'">Listado de ejercicios</button>
+  </div>
+</body>
+</html>

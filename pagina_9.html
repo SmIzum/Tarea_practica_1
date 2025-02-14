@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Pasatiempos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .boton {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mis Pasatiempos</h1>
+    <div class="gallery">
+        <img src="actividad_1.jfif" alt="Pasatiempo 1" onclick="abrirImagen(this.src)">
+        <img src="actividad_2.jfif" alt="Pasatiempo 2" onclick="abrirImagen(this.src)">
+        <img src="actividad_3.jpg" alt="Pasatiempo 3" onclick="abrirImagen(this.src)">
+    </div>
+
+    <button class="boton" onclick="window.location.href='index.html'">Listado de ejercicios</button>
+
+    <script>
+        function abrirImagen(src) {
+            window.open(src, '_blank', 'width=800,height=600');
+        }
+    </script>
+
+</body>
+</html>
